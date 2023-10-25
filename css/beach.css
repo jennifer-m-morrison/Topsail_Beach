@@ -1,0 +1,618 @@
+/*
+Student Name: Jennifer Morrison 
+Date: October 26, 2023 
+File Name: beach.css
+Web 210 - Assignment 10
+
+Color Palette: 
+#295877 - lapis lazuli 
+#D4F5F5 - light cyan
+#ffcb77 - sunset
+#F5F5E2 - beige
+#9F7833 - golden brown
+*/
+
+/************** CSS RESET **************/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Set root font size and basic styling for body */
+html {
+    font-size: 1rem;
+}
+
+body {
+    background-color: #F5F5E2;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/************** MOBILE DESKTOP STYLING **************/
+
+/* Heading and image styles */
+h2 {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    text-align: center;
+    color: #295877;
+    font-size: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/****** Header section styling ******/
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Float logo image to left of header */
+header img {
+    float: right;
+    width: 80%;
+    margin: 0.5em 1em 1.5em 0;
+    
+}
+
+/* Hide checkbox */
+input#mobile_menu {
+    display: none;
+}
+
+/* When input is checked by clicking label, nav menu opens on right side of display */
+input#mobile_menu:checked+nav {
+    left: 0px;
+}
+
+
+/* When input is checked by clicking label, hamburger icon changes to "x" and moves to left of side of open nav menu  */
+input#mobile_menu:checked+nav label {
+    left: 200px;
+    background-image: url("../images/menu_close.svg");
+}
+
+
+/* Styling for popup navigation menu */
+nav {
+    width: 200px;
+    background-color: #295877;
+    padding: 0.75em 0 0.75em 0;
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    left: -200px;
+}
+
+/* Styling for navigation links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    padding: 1em;
+    border-bottom: 1px solid rgba(126, 177, 211, .3);
+}
+
+nav a:last-of-type {
+    border-bottom: none;
+}
+
+nav a:hover {
+    color: #295877;
+    background-color: #FAFAF4;
+}
+
+/* Initial styling for hamburger menu icon box positioned to left of nav menu on right side of display*/
+nav label {
+    cursor: pointer;
+    display: block;
+    width: 42px;
+    height: 42px;
+    background: #295877 url("../images/menu_open.svg") no-repeat center center;
+    background-size: 22px auto;
+    position: absolute;
+    top: 20px;
+    right: -42px;
+}
+
+/****** Main section styling ******/
+
+/* Clear float from navigation menu */
+main {
+    clear: both;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* main section: paragraph and image styles */
+main p,
+main ul {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding: 0 1.5em;
+    margin-bottom: 0;
+}
+
+main img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+main h2 {
+    margin-top: 0;
+}
+
+.hero img {
+    box-shadow: 5px 5px 10px #295877;
+}
+
+.hero h2 {
+    margin-top: 1em;
+}
+
+/* Add margin and rounded corners to main content section */
+.main-content {
+    margin: 1em;
+    border-radius: 15px;
+}
+
+/* Add distinctive background to first content box */
+.content-box:first-of-type {
+    background-color: #295877;
+    color: #FAFAF4;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: 15px;
+}
+
+/* Remove aside for mobile display */
+aside {
+    display: none;
+}
+
+/* Grid gallery of images for Visitors Section */
+
+/* Grid container styles */
+.grid-gallery {
+    background-color: #ffcb77;
+    color: #0F364F;
+    border-radius: 15px;
+    padding: 1em 0;
+    margin: 0.75em;
+    text-align: center;
+}
+
+/* Grid item styles */
+.grid-gallery h2 {
+    display: none;
+}
+
+.grid-gallery h3 {
+    margin-top: 0.5em;
+}
+
+.grid-gallery figure {
+    margin: 1em;
+}
+
+.gallery-item {
+    border-bottom: 2px solid #0F364F;
+    padding-top: 0.75em;
+}
+
+.gallery-item:first-child {
+    padding-top: 0;
+}
+
+.gallery-item:last-child {
+    border-bottom: none;
+}
+
+.gallery-item a {
+    color: #0F364F;
+    text-decoration: underline;
+}
+
+
+/***** Styles for about.html, fishing.html, accommodations.html, safety.html, restaurants.html *****/
+.grid-container p,
+.grid-container ul {
+    margin-bottom: 1em;
+}
+
+.grid-container img {
+    width: 90%;
+}
+
+.grid-container li {
+    list-style: none;
+}
+
+.grid-container a {
+    color: #295877;
+    text-decoration: underline;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+
+/****** Footer section styling ******/
+footer {
+    background-color: #295877;
+    color: #FAFAF4;
+    text-align: center;
+    padding: 0.35em;
+}
+
+footer .flex {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1%;
+}
+
+footer p {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0 1em;
+
+}
+
+footer p a {
+    color: #FAFAF4;
+    text-decoration: underline;
+
+}
+
+/****************** SMALL TABLET STYLING ***************/
+
+/***** Styles for about.html, fishing.html, accommodations.html, safety.html, restaurants.html, activities.html, marina.html *****/
+
+/* Reduced image size for tablet displays */
+@media (min-width: 550px) {
+
+    .grid-container img {
+        width: 60%;
+    }
+
+}
+
+/************** LARGER TABLET STYLING **************/
+@media (min-width:760px) {
+
+    body {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Center logo in header on display */
+    header {
+        text-align: center;
+    }
+
+    /****** Tablet: Header section styling ******/
+    header img {
+        margin-bottom: 0;
+        display: inline;
+    }
+
+    nav label,
+    header input {
+        display: none;
+    }
+
+    /* Tablet: Navigation change from hamburger menu to flex container */
+    nav {
+        position: static;
+        display: inline-flex;
+        justify-content: space-evenly;
+        background-color: #F5F5E2;
+        color: #295877;
+        width: 100%;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #0F364F;
+        border: none;
+        font-size: 1.3rem;
+        padding: 0.75em 0.5em 0;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        background-color: #F5F5E2;
+    }
+
+    /****** Tablet: Header image - remove float ******/
+    header img {
+        float: none;
+        max-width: 70%;
+    }
+
+    /****** Tablet: Main section styling ******/
+    main p,
+    main ul {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    main h2 {
+        font-size: 2rem;
+    }
+
+    /* Tablet: Flexbox container for two main-content images and paragraphs */
+    .main-content {
+        display: flex;
+        justify-content: center;
+        background-color: #295877;
+        color: #FAFAF4;
+        gap: 20px;
+        padding: 1em;
+    }
+
+    .main-content p {
+        font-size: 20px;
+    }
+
+    .content-box {
+        flex: 0 1 50%;
+    }
+
+    .content-box:first-of-type {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Tablet: Two-column grid container for Visitor Gallery images */
+    /* Grid container styles */
+    .grid-gallery {
+        display: grid;
+        padding: 1em;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto;
+        gap: 10px;
+    }
+
+    /* Tablet: Grid item styles */
+    .grid-gallery h2 {
+        display: block;
+        margin: 0;
+        grid-column: 1/3;
+    }
+
+    .grid-gallery h3 {
+        margin: 0 0 0.45em 0;
+        text-shadow: 0 0 4px #000;
+        display: inline;
+        z-index: 2;
+    }
+
+    .gallery-item {
+        border: none;
+        display: grid;
+        padding: 0;
+        border-radius: 15px;
+    }
+
+    .gallery-item>* {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    /* Tablet: change gallery-item position and shadow when focus or hover state */
+    .gallery-item:focus,
+    .gallery-item:hover {
+        margin: -2px 2px 2px -2px;
+        box-shadow: 0px 0px 10px 0px rgba(41, 88, 119, .8);
+    }
+
+    /* Tablet: Position figcaption over image with flexbox */
+    figure {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding-left: 1em;
+        font-size: 1.5rem;
+        color: #FAFAF4;
+    }
+
+    figure a:link,
+    figure a:visited {
+        color: #FAFAF4;
+        text-decoration: none;
+    }
+
+    /* Tablet: Footer paragraph styling */
+    footer p {
+        font-size: 0.95rem;
+    }
+
+}
+
+/************** DESKTOP STYLING **************/
+@media (min-width:900px) {
+
+
+    /* Desktop: Change header to float logo image and move nav to right of logo */
+
+    header {
+        display: inline;
+    }
+
+    header img {
+        margin: 0;
+        padding: 0;
+        float: left;
+        max-width: 45%;
+    }
+
+    nav {
+        width: 55%;
+    }
+
+
+    /* Desktop: Main section styling */
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: auto 20em;
+        grid-template-rows: auto auto auto;
+        grid-gap: 20px;
+        margin-top: 2em;
+    }
+
+    .hero {
+        grid-column: 1;
+    }
+
+    .hero img {
+        height: 72vh;
+        width: 100%;
+        box-shadow: 1px 1px 20px #295877;
+        object-fit: cover;
+    }
+
+    .hero h2 {
+        font-size: 1.7rem;
+        margin-bottom: 0;
+    }
+
+    .main-content {
+        grid-column: 1/3;
+        grid-row: 2;
+        width: 80%;
+        margin: 1.5em auto;
+    }
+
+    /* Desktop: Aside section styling */
+    aside {
+        grid-column: 2;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        background-color: #D4F5F5;
+        border: 2px dotted #295877;
+        border-radius: 15px;
+        padding: 0 0.5em 1em;
+    }
+
+    aside ul {
+        list-style: none;
+        border-bottom: 1px dotted #295877;
+        padding: 0 0.5em 1em;
+    }
+
+    aside a {
+        color: #0F364F;
+        text-decoration: underline;
+    }
+
+    aside h2 {
+        padding: 0 0.7em 0;
+        color: #0F364F;
+        padding-top: 0.8em;
+    }
+
+    aside h2:first-of-type {
+        border-top: 1px dotted #295877;
+    }
+
+    aside img:first-of-type:hover {
+        background-color: rgba(41, 88, 119, .1);
+    }
+
+    aside li {
+        display: inline-block;
+        line-height: 1.5;
+        padding: 0.5em;
+    }
+
+    aside li:hover {
+        background-color: rgba(41, 88, 119, .1);
+    }
+
+    aside a {
+        font-size: 0.9em;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* Desktop Viewport: Three-column grid container for Visitor Gallery images on index.html */
+
+    /* Grid container styles */
+    .grid-gallery {
+        grid-column: 1/3;
+        grid-row: 3;
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        padding: 1em;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+    }
+
+    /* Grid item styles */
+    .grid-gallery h2 {
+        grid-column: 1/4;
+    }
+
+    .grid-gallery h3 {
+        font-size: 1.1em;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /***** Styles for about.html, fishing.html, accommodations.html, safety.html, restaurants.html, activities.html, marina.html *****/
+
+    /* Floating image to left of text content */
+
+    main {
+        margin-bottom: 1em;
+    }
+
+    .grid-container {
+        width: 80%;
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+
+    .grid-container img {
+        width: 45%;
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+
+
+    /* Desktop: Footer styles */
+    .footer {
+        clear: left;
+        margin-top: 2em;
+    }
+
+    footer p a:hover {
+        color: #FAFAF4;
+        text-decoration: underline;
+    }
+
+
+}

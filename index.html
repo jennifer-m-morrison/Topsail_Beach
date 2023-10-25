@@ -1,0 +1,199 @@
+<!--    Student Name: Jennifer Morrison
+        Date: October 23, 2023
+        File Name: index.html
+        Web 210 - Assignment 10
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Topsail Beach | Premier NC Beach Vacation</title>
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="css/beach.css">
+</head>
+
+<body class="site">
+    <!-- Header Section -->
+    <header class="header">
+        <img src="images/topsail_tabdesk_logo500.png"
+             alt=""
+             srcset="images/topsail_mobile_logo250.png 250w, images/topsail_tabdesk_logo500.png 500w"
+             sizes="(max-width: 525px) 250px, 500px">
+    </header>
+
+    <!-- Nav Section -->
+    <input id="mobile_menu"
+           type="checkbox">
+
+    <nav>
+        <label for="mobile_menu"></label>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="marina.html">Marina</a>
+            <a href="safety.html">Safety</a>
+    </nav>
+
+    <!-- Main Section -->
+    <main class="main">
+        <!-- Hero Image with main header -->
+        <section class="hero">
+            <img src="images/famiy650.jpg"
+                 srcset="images/family400.jpg 400w, images/family650.jpg 650w, images/family1000.jpg 1000w"
+                 sizes="(max-width: 450px) 80vw,
+                (max-width: 750px) 95vw,
+                (max-width: 1000px) 750px,
+                1000px"
+                 alt="family splashing in turquoise waves breaking along sandy shore at Holden Beach, North Carolina">
+            <h2>Discover the sand and sun at Topsail Beach!</h2>
+        </section>
+        <!-- First Content Box for main-content section -->
+        <section class="main-content">
+            <div class="content-box">
+                <img src="images/pier650.jpg"
+                     alt="pier at Topsail Beach at sunset with ocean waves gently breaking along beach"
+                     srcset="images/pier400.jpg 400w, images/pier650.jpg 650w, images/pier900.jpg 900w"
+                     sizes="(max-width: 450px) 90vw,
+                    (max-width: 750px) 80vw,
+                    (max-width: 900px) 750px,
+                    900px">
+                <p>Nestled along the North Carolina coastline, Topsail Island is the
+                    ultimate retreat. With soft sandy shores and clear tranquil waters, it
+                    offers a unique experience for each visitor.
+                </p>
+            </div>
+            <!-- Second Content Box for main-content section -->
+            <div class="content-box">
+                <img src="images/beach_heart650.jpg"
+                     alt="ocean waves crashing on shore with heart drawn in sand"
+                     srcset="images/beach_heart400.jpg 400w, images/beach_heart650.jpg 650w, images/beach_heart900.jpg 900w"
+                     sizes="(max-width: 450px) 90vw,
+                    (max-width: 750px) 80vw,
+                    (max-width: 900px) 750px, 900px">
+                <p>You'll witness
+                    breathtaking
+                    sunsets over the vast ocean horizon. As you build sandcastles, collect
+                    seashells, and ride the ocean waves, you will create memories that
+                    last a
+                    lifetime. </p>
+            </div>
+        </section>
+
+        <!-- Aside with additional information for desktop viewport-->
+        <aside>
+            <a href="https://weather.com/weather/today/l/a5f5ce3174ec5c439a6a7d316579ac750db1569892fdfe0ea1c2bce5c2b67a0c"
+               target="_blank"><img src="images/weather200.png"
+                     alt="Today's Weather Forecast"></a>
+            <h2>Topsail News</h2>
+            <ul>
+                <li>
+                    <a href="https://www.postvoiceonline.com/"
+                       target="_blank">The Pender-Topsail Post & Voice</a>
+                </li>
+                <li>
+                    <a href="https://www.starnewsonline.com/"
+                       target="_blank">Wilmington Star News</a>
+                </li>
+                <li>
+                    <a href="https://www.wwaytv3.com/"
+                       target="_blank">WWay News Channel 3 News</a>
+                </li>
+            </ul>
+
+            <h2>Connect with us!</h2>
+            <div class="social-media">
+                <a href="https://www.instagram.com/topsailbeachnc/"
+                   target="_blank">
+                    <img src="images/instagram50.png"
+                         alt="Instagram logo"></a>
+                <a href="https://www.facebook.com/"
+                   target="_blank">
+                    <img src="images/facebook50.png"
+                         alt="Facebook logo"></a>
+            </div>
+        </aside>
+
+        <!-- Grid gallery - Visitor Information Section-->
+        <section class="grid-gallery"
+                 id="visitors">
+            <h2>Visitor Information</h2>
+            <figure class="gallery-item">
+                <img class="galler-item-img"
+                     src="images/beach_house400.jpg"
+                     alt="beach view of row of blue oceanfront house along coast">
+                
+                    <figcaption><a href="accommodations.html">
+                        <h3>Places to stay</h3></a>
+                    </figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/marina400b.jpg"
+                     alt="Sandman fishing boat docked in marina along the intercoastal waterway">
+                    <figcaption><a href="marina.html">
+                        <h3>Marina</h3></a>
+                    </figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/safety400.jpg"
+                     alt="life preservers leaning up against railing on dock">
+                
+                    <figcaption><a href="safety.html">
+                        <h3>Safety</h3></a>
+                    </figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/dining400.jpg"
+                     alt="elegant wooden table with casual but elegant place settings at local Topsail beach restaurant">
+                    <figcaption><a href="restaurants.html">
+                        <h3>Dining</h3></a>
+                    </figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/fishing400.jpg"
+                     alt="man in white short and orange swim trunks surf fishing at topsail beach">
+                    <figcaption><a href="fishing.html">
+                        <h3>Fishing</h3></a>
+                    </figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/parasail400.jpg"
+                     alt="bright red parasail with two tandem riders gliding over clear blue ocean waters">
+                    <figcaption><a href="activities.html">
+                        <h3>Activities</h3></a>
+                    </figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; Copyright 2023. All Rights Reserved. </p>
+        <p>820 S. Anderson Blvd., Topsail Beach, NC 28445</p>
+        <p>
+            <a href="mailto:topsailbeach@gmail.com">
+                topsailbeach@gmail.com</a>
+        </p>
+        <div class="flex">
+            <a href="https://www.instagram.com/topsailbeachnc/"
+               target="_blank">
+                <img src="images/instagram.png"
+                     alt="Instagram logo"></a>
+            <a href="https://www.facebook.com/"
+               target="_blank">
+                <img src="images/facebook.png"
+                     alt="Facebook logo"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
